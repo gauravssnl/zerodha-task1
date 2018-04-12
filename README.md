@@ -18,7 +18,7 @@ def download_csv_zip_extract():
 	date = "{}-{}-{}".format(day, month, year)
 	print("Today's Date: ", date)
 
-	base_url = "https://www.bseindia.com/download/BhavCopy/Equity/EQ{}{}{}_CSV.ZIP".format(day, month, year[2:])
+	base_url = "https://www.bseindia.com/download/BhavCopy/Equity/EQ{}{}{}_CSV.ZIP".format(int(day)-1, month, year[2:])
 	print(base_url)
 	filename = base_url.split("/")[-1]
 	print(filename)
