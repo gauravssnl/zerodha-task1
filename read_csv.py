@@ -7,8 +7,8 @@ def read_csv():
 	year, month, day = today.split("-")
 	date = "{}-{}-{}".format(day, month, year)
 	print("Today's Date: ", date)
-	filename = "EQ{}{}{}.CSV".format(day, month, year[2:])
-	print(filename)
+	filename = "EQ{}{}{}.CSV".format(int(day) - 1, month, year[2:])
+	print("Filename : ", filename)
 	# File context
 	with open(filename, "r") as f:
 		reader = csv.reader(f)
@@ -22,10 +22,10 @@ def read_csv():
 				row_num += 1
 			else:
 				colnum = 0
-				for col in row:
+				"""for col in row:
 					print(col, end=" "*len(header[colnum]))
 					colnum += 1
-				print()
+				print()"""
 
 
 
