@@ -6,7 +6,6 @@ Task1 for  Zerodha Careers
 
 ```python
 import urllib.request
-import urllib
 import datetime
 import zipfile
 
