@@ -1,6 +1,7 @@
 # zerodha-task1
 Task1 for  Zerodha Careers
 
+
 ## Download latest csv in zip format from  http://www.bseindia.com/markets/equity/EQReports/BhavCopyDebt.aspx?expandable=3 and extarct it
 
 ```python
@@ -49,5 +50,13 @@ import pandas as pd
 data =(pd.read_csv(filename, usecols=["SC_CODE", "SC_NAME", "OPEN", "HIGH", "LOW", "CLOSE"]))
 print("Top 10 Stock Comapnies by Closing Price")
 data.sort_values(by="CLOSE" ,ascending=False ) [:10]
+
+Steps to run the files:
+To launch jupyter-notebook , install the requirements by using  this command:
+```code
+pip install -r requirements.txt
+
+jupyter-notebok
+```
 
 ```
