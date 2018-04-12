@@ -35,6 +35,7 @@ if __name__ == '__main__':
 
 ```
 
+
 ## Selcting Column Fields: code, name, open, high, low, close from the CSV File 
 
 ```python
@@ -42,6 +43,7 @@ import pandas as pd
 data =(pd.read_csv(filename, usecols=["SC_CODE", "SC_NAME", "OPEN", "HIGH", "LOW", "CLOSE"]))
 
 ```
+
 
 ## Top 10 Stock Comapnies by Closing Price
 
@@ -53,7 +55,8 @@ data.sort_values(by="CLOSE" ,ascending=False ) [:10]
 
 ```
 
-Steps to run the notebook files:
+
+### Steps to run the notebook files:
 1. Install the requirements by using  this command:
 
 ```code
@@ -65,5 +68,6 @@ pip install -r requirements.txt
 ```code
 jupyter-notebok
 ```
+
 ![Screenshot](https://github.com/gauravssnl/zerodha-task1/blob/master/ScreenShots/Screenshot%20from%202018-04-12%2016-57-54.png)
 
