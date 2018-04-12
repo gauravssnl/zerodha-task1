@@ -52,11 +52,17 @@ print("Top 10 Stock Comapnies by Closing Price")
 data.sort_values(by="CLOSE" ,ascending=False ) [:10]
 
 ```
-Steps to run the files:
-To launch jupyter-notebook , install the requirements by using  this command:
+
+Steps to run the notebook files:
+1. Install the requirements by using  this command:
+
 ```code
 pip install -r requirements.txt
+```
 
+2. Run jupyter-notebook by using this command:
+
+```code
 jupyter-notebok
 ```
 
