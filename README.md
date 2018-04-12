@@ -33,3 +33,21 @@ if __name__ == '__main__':
 	download_csv_zip_extract()
 
 ```
+
+## Selcting Column Fields: code, name, open, high, low, close from the CSV File 
+
+```python
+import pandas as pd
+data =(pd.read_csv(filename, usecols=["SC_CODE", "SC_NAME", "OPEN", "HIGH", "LOW", "CLOSE"]))
+
+```
+
+## Top 10 Stock Comapnies by Closing Price
+
+```python
+import pandas as pd
+data =(pd.read_csv(filename, usecols=["SC_CODE", "SC_NAME", "OPEN", "HIGH", "LOW", "CLOSE"]))
+print("Top 10 Stock Comapnies by Closing Price")
+data.sort_values(by="CLOSE" ,ascending=False ) [:10]
+
+```
