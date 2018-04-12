@@ -65,4 +65,5 @@ pip install -r requirements.txt
 ```code
 jupyter-notebok
 ```
+![Screenshot](https://github.com/gauravssnl/zerodha-task1/blob/master/ScreenShots/Screenshot%20from%202018-04-12%2016-57-54.png)
 
