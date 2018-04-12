@@ -34,7 +34,7 @@ def store_data(r, data):
 
 def read_data(r):
     print("Database Keys : ", r.keys())
-    for key in r.keys():
+    #for key in r.keys():
         # print the whole list stored in Redis
         #print(key)
         #print(r.lrange(key.decode(), 0 , -1))
