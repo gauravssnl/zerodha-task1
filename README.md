@@ -1,6 +1,7 @@
 # zerodha-task1
 Task1 for  Zerodha Careers
 
+
 ## Download latest csv in zip format from  http://www.bseindia.com/markets/equity/EQReports/BhavCopyDebt.aspx?expandable=3 and extarct it
 
 ```python
@@ -17,7 +18,7 @@ def download_csv_zip_extract():
 	date = "{}-{}-{}".format(day, month, year)
 	print("Today's Date: ", date)
 
-	base_url = "https://www.bseindia.com/download/BhavCopy/Equity/EQ{}{}{}_CSV.ZIP".format(day, month, year[2:])
+	base_url = "https://www.bseindia.com/download/BhavCopy/Equity/EQ{}{}{}_CSV.ZIP".format(int(day)-1, month, year[2:])
 	print(base_url)
 	filename = base_url.split("/")[-1]
 	print(filename)
@@ -51,3 +52,17 @@ print("Top 10 Stock Comapnies by Closing Price")
 data.sort_values(by="CLOSE" ,ascending=False ) [:10]
 
 ```
+
+Steps to run the notebook files:
+1. Install the requirements by using  this command:
+
+```code
+pip install -r requirements.txt
+```
+
+2. Run jupyter-notebook by using this command:
+
+```code
+jupyter-notebok
+```
+
