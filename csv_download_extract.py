@@ -1,8 +1,6 @@
 import urllib.request
-import urllib
 import datetime
 import zipfile
-import os
 
 
 def download_csv_zip_extract():
